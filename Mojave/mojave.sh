@@ -15,6 +15,7 @@ EOF
 }
 
 HOUR=$(date +"%H%M")
+HOUR=$(echo $HOUR | sed 's/^0*//')
 
 if   (( ${HOUR} >= 0 && ${HOUR} < 130 ))
 then :
