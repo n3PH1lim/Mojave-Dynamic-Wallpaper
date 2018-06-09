@@ -86,7 +86,7 @@ then :
 
       set_wallpaper "${PICTURE_PATH}/21.jpeg"
 
-elif (( ${HOUR} >= 2100 && ${HOUR} < 2230 ))
+elif (( ${HOUR} >= 2100 && ${HOUR} < 2359 ))
 then :
 
       set_wallpaper "${PICTURE_PATH}/22_30.jpeg"
