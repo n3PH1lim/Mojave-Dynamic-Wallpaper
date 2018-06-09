@@ -7,10 +7,9 @@ PICTURE_PATH="/Users/Shared/Mojave"
 function set_wallpaper () {
 
 osascript << EOF
-set desktopImage to POSIX file "${1}"
-tell application "Finder"
-set desktop picture to desktopImage
-end tell
+
+tell application "System Events" to tell every desktop to set picture to "${1}"
+
 EOF
 
 }
